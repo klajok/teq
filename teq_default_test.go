@@ -80,6 +80,7 @@ func primitives() []test {
 		{1.5, 2.5, []string{"expected 1.5, got 2.5"}},
 		{"a", "a", nil},
 		{"a", "b", []string{"expected a, got b"}},
+		{"x y", "x%20y", []string{"expected x y, got x%20y"}},
 
 		{"a", 1, []string{"expected a, got 1"}},
 	}
